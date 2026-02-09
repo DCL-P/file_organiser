@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "file_organizer": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
