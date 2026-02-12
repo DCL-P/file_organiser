@@ -4,17 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using file_organiser;
+using file_organizer.data;
 
-namespace file_organiser
+namespace main
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            while (true)
-            {
-                Console.WriteLine("loop gaat loop :)");
-            }
+            Console.WriteLine(art.intro_text_banner());
+            //while (true)
+            //{
+            //    Console.WriteLine("loop gaat loop :)");
+            //}
         }
     }
 }
