@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using main;
 
-namespace file_organizer
+namespace file_organiser
 {
     public enum OptionTypes
     {
