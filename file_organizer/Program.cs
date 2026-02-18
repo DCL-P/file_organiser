@@ -7,6 +7,7 @@ using System.IO;
 using file_organiser;
 using file_organizer.data;
 using file_organizer;
+using System.Runtime.InteropServices;
 
 namespace main
 {
@@ -40,11 +41,15 @@ namespace main
 
                     if (chosen_option != null)
                     {
-                        //if (Enum.Parse<OptionTypes>(chosen_option) in OptionTypes_values) 
-                        //{
-                        //    program obj = new program();
-                        //    obj.process_option(path, chosen_option);
-                        //}
+                        //tryparse statement is for comparing readlines with enum values through letters
+                        if (Enum.TryParse(chosen_option, ignoreCase: true, out OptionTypes result))
+                        {
+                            Console.WriteLine("log: option is valid!!");
+                        }
+                        else 
+                        {
+                            Console.WriteLine("log: option is invalid!!");
+                        }
                     }
                 }
                 else
